@@ -1,0 +1,131 @@
+/*
+Colors used:
+Primary color: (Blue) #0064E0; rgb((0, 100, 224)
+Other colors: 1. Light gray: #C5C5C5; 2. Dark gray : #575756; 3. White : #FFFFFF; 4. Black : #000000;
+*/
+
+img {
+  width: 100%;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px; /* Sets the font size to 16px */
+  font-weight: 300; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  color: #575756;
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.25em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 1.35em;
+  font-weight: 600;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  }
+
+a {
+  font-weight: 600;
+  color: #0064E0;
+  text-decoration: none;
+}
+
+a:active {
+  color: #000000;
+  text-decoration: underline;
+}
+
+a:visited {
+  opacity: 0.5;
+}
+
+a:hover,
+a:focus {
+  opacity: 0.5;
+  text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+.button {
+  display: inline-block;
+  background-color: #0064E0;
+  color: #ffffff !important;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  padding: 10px;
+  border-radius: 10px;
+  transition: 0.2s opacity;
+}
+
+.button:active {
+  color: #000000;
+}
+
+.button:visited {
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.button:hover,
+.button:focus {
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.button.contact {
+  background-color: transparent;
+  color: #0064E0 !important;
+  padding: 10px;
+  text-transform: uppercase;
+  border: 2px solid #0064E0;
+}
+
+.button.contact:active {
+  background-color: #000000;
+  color: #ffffff !important;
+  opacity: 1.0;
+}
+
+.button.contact:visited {
+  background-color: #0064E0;
+  color: #ffffff !important;
+  opacity: 0.5;
+}
+
+.button.contact:hover,
+.button.contact:focus {
+  background-color: #0064E0;
+  color: #ffffff !important;
+  opacity: 0.5;
+}
