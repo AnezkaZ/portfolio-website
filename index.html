@@ -21,10 +21,10 @@
 <body>
 
   <header>
-    <div>
-      <img src="img/logo.svg" alt="Anezka Zajicova">
+    <div class="container">
+      <img src="img/logo.svg" alt="Anezka Zajicova" class="logo">
       <nav>
-        <ul>
+        <ul class="navigation">
           <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="#contact">Contact</a></li>
@@ -34,23 +34,21 @@
   </header>
 
   <main>
-    <div class="section">
-
+    <div id="hero">
       <div class="container">
-        <h1>Hello, my name is Anezka!<span> I’m a UX Designer based in Barcelona. </span></h1>
+        <div class="herotext">
+        <h1>Hello, my name is Anezka!</h1><h2>I’m a UX Designer based in Barcelona.</h2>
         <p>Devoted to construct user experience which makes people's tasks easy and accessible.</p>
       </div>
-
     </div>
+      </div>
 
-    <div class="section">
-
+    <div id="work">
       <div class="container">
-
-        <h2>My work</h2>
-
+        <div class="firstheader">
+        <h1>My work</h1>
+      </div>
         <div class="row">
-
           <div class="column">
             <picture>
               <source srcset="img/vela/vela_home_mobile.jpg" media="(max-width:767px)">
@@ -59,15 +57,13 @@
           </div>
 
           <div class="column">
-            <h3>Vela</h3>
+            <h2>Vela</h2>
             <p>Weather forecast application for water sport lovers.</p>
             <a href="vela.html" class="button">view project</a>
           </div>
-
         </div>
 
         <div class="row">
-
           <div class="column">
             <picture>
               <source srcset="img/perfect_properties/perfectproperties_home_mobile.jpg" media="(max-width:767px)">
@@ -76,15 +72,13 @@
           </div>
 
           <div class="column">
-            <h3>Perfect Properties</h3>
+            <h2>Perfect Properties</h2>
             <p>A responsive web app that provides property buyers with information on properties of interest.</p>
             <a href="perfect_properties.html" class="button">view project</a>
           </div>
-
         </div>
 
         <div class="row">
-
           <div class="column">
             <picture>
               <source srcset="img/vocabuild/vocabuild_home_mobile.jpg" media="(max-width:767px)">
@@ -93,20 +87,18 @@
           </div>
 
           <div class="column">
-            <h3>Vocabuild</h3>
+            <h2>Vocabuild</h2>
             <p>Vocabulary learning app.</p>
             <a href="vocabuild.html" class="button">view project</a>
           </div>
-
         </div>
-
       </div>
-
     </div>
 
   </main>
 
   <footer id="contact">
+    <div class="container">
     <h2>Get in Touch</h2>
     <p>Do you like my work and want to discuss opportunities? Please get in touch.</p>
 
@@ -120,12 +112,11 @@
       <a href="mailto:zajicovaane@gmail.com" class="button contact">Email me</a>
     </div>
 
-    <div>
-      <ul>
+    <div class="social">
         <!--Social Media Layout and Placeholders-->
-        <li><a href="https://www.linkedin.com/in/anezka-zajicova-83a485158/" target="_blank">
+        <a href="https://www.linkedin.com/in/anezka-zajicova-83a485158/" target="_blank">
             <!--Linkedin icon-->
-            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 97.8 97.8" style="enable-background:new 0 0 97.8 97.8;" xml:space="preserve">
+            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 97.8 97.8" style="enable-background:new 0 0 97.8 97.8;" xml:space="preserve" class="icon">
               <style type="text/css">
                 .st0 {
                   fill: #0064E0;
@@ -136,11 +127,11 @@
             	 M77.6,73.9H65.7V54.7c0-4.8-1.7-8.1-6-8.1c-3.3,0-5.2,2.2-6.1,4.4c-0.3,0.8-0.4,1.8-0.4,2.9v20H41.3c0,0,0.2-32.5,0-35.8h11.9v5.1
             	c1.6-2.4,4.4-5.9,10.7-5.9c7.8,0,13.7,5.1,13.7,16.1V73.9z" />
             </svg>
-          </a></li>
+          </a>
 
-        <li><a href="https://www.behance.net/anezkazajicova" target="_blank">
+          <a href="https://www.behance.net/anezkazajicova" target="_blank">
             <!--Behance icon-->
-            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 97.8 97.8" style="enable-background:new 0 0 97.8 97.8;" xml:space="preserve">
+            <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 97.8 97.8" style="enable-background:new 0 0 97.8 97.8;" xml:space="preserve" class="icon">
               <style type="text/css">
                 .st0 {
                   fill: #0064E0;
@@ -158,11 +149,11 @@
                 </g>
               </g>
             </svg>
-          </a></li>
-      </ul>
+          </a>
     </div>
 
     <p>Copyright Anezka Zajicova 2020</p>
+  </div>
   </footer>
 
 </body>

@@ -1,7 +1,7 @@
 /*
 Colors used:
 Primary color: (Blue) #0064E0; rgb((0, 100, 224)
-Other colors: 1. Light gray: #C5C5C5; 2. Dark gray : #575756; 3. White : #FFFFFF; 4. Black : #000000;
+Other colors: 1. Light gray: #C5C5C5; 2. Dark gray : #575756; 3. White : #FFFFFF; 4. Black : #000000; 767676;
 */
 
 img {
@@ -10,55 +10,45 @@ img {
 
 body {
   background-color: #ffffff;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px; /* Sets the font size to 16px */
-  font-weight: 300; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.6;
   color: #575756;
 }
 
 h1, h2, h3, h4 {
+  font-family: 'Open Sans', sans-serif;
   line-height: 1.4;
 }
 
 h1 {
-  font-size: 2.75em;
-  font-weight: 700;
+  font-size: 2em;
+  font-weight: 600;
 }
 
 h2 {
-  font-size: 2.25em;
-  font-weight: 700;
+  font-size: 1.60em;
+  font-weight: 600;
 }
 
 h3 {
-  font-size: 1.75em;
+  font-size: 1.30em;
   font-weight: 600;
 }
 
 h4 {
-  font-size: 1.35em;
-  font-weight: 600;
+  font-size: 1.20em;
+  font-weight: 400;
 }
 
-p {
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  }
-
 a {
-  font-weight: 600;
   color: #0064E0;
   text-decoration: none;
 }
 
-a:active {
-  color: #000000;
-  text-decoration: underline;
-}
-
 a:visited {
-  opacity: 0.5;
+  color: #0064E0;
 }
 
 a:hover,
@@ -67,14 +57,10 @@ a:focus {
   text-decoration: underline;
 }
 
-
-
-
-
-
-
-
-
+a:active {
+  color: #000000;
+  text-decoration: underline;
+}
 
 .button {
   display: inline-block;
@@ -86,15 +72,6 @@ a:focus {
   padding: 10px;
   border-radius: 10px;
   transition: 0.2s opacity;
-}
-
-.button:active {
-  color: #000000;
-}
-
-.button:visited {
-  opacity: 0.5;
-  text-decoration: none;
 }
 
 .button:hover,
@@ -109,18 +86,7 @@ a:focus {
   padding: 10px;
   text-transform: uppercase;
   border: 2px solid #0064E0;
-}
-
-.button.contact:active {
-  background-color: #000000;
-  color: #ffffff !important;
-  opacity: 1.0;
-}
-
-.button.contact:visited {
-  background-color: #0064E0;
-  color: #ffffff !important;
-  opacity: 0.5;
+  margin: 0 5px;
 }
 
 .button.contact:hover,
@@ -128,4 +94,126 @@ a:focus {
   background-color: #0064E0;
   color: #ffffff !important;
   opacity: 0.5;
+}
+
+/* Layout styling */
+.container {
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.row {
+  margin: 25px 0;
+}
+
+#work .row {
+  padding-bottom: 25px;
+  border-bottom: 1px solid #EBEBEB;
+}
+
+#hero {
+  text-align: center;
+  background-color: #f4f7fb;
+  padding: 15px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+.herotext > h1 {
+font-size: 2.35em;
+font-weight: 700;
+margin: 15px 0px 0px 0px;
+}
+
+.herotext > h2 {
+font-size: 2.35em;
+font-weight: 400;
+margin: 0px 0px 0px 0px;
+}
+
+.herotext > p {
+font-size: 1.2em;
+font-weight: 300;
+line-height: 1.5em;
+}
+
+#contact {
+  text-align: center;
+}
+
+.logo {
+  max-width: 100px;
+}
+
+header {
+  background-color: #f4f7fb;
+  text-align: center;
+  padding: 15px 0px 0px 0px;
+  box-shadow: 0px 1px 1px 0px rgba(235, 235, 235, 0.8);
+  position: fixed;
+  width: 100%;
+}
+
+nav > ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 0 15px;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: #0064E0;
+}
+
+main {
+  padding-top: 162px;
+}
+
+footer {
+  background-color: #f4f7fb;
+  padding: 10px 0px;
+}
+
+.icon {
+  max-width: 60px;
+  margin: 5px 5px;
+}
+
+.social {
+  list-style-type: none;
+  margin: 15px;
+}
+
+.firstheader > h1 {
+  text-align: center;
+  font-size: 1.75em;
+}
+
+.secondheader > h2 {
+  text-align: center;
+  font-size: 1.55em;
+}
+
+#project_links > ul {
+  padding: 0px 0px 0px 0px;
+}
+
+#project_links > ul > li {
+  list-style-type: none;
+  padding: 0px 0px 0px 0px;
+}
+
+#project_links > ul > li > a {
+  font-weight: 400;
+}
+
+.project_end {
+  margin: 15px 0px;
 }
