@@ -18,11 +18,13 @@
   <meta name="theme-color" content="#ffffff">
 </head>
 
-<body>
+<body id="about-page">
 
   <header>
     <div class="container">
+      <a href="index.html">
       <img src="img/logo.svg" alt="Anezka Zajicova" class="logo">
+      </a>
       <nav>
         <ul class="navigation">
           <li><a href="index.html">Work</a></li>
@@ -47,17 +49,18 @@
         </picture>
 
         <div class="row">
-          <div class="column">
+          <div class="column col-lg-9">
             <p>A User Experience Designer who includes UI Design in her projects with a background in Graphic and Digital Design and Customer Service. Through problem solving skills, empathy and passion for design she has an ability
               to understand human needs in various situations and she provides the right and effective solution.</p>
-            <a href="img/cv.pdf" target="_blank" class="button">Download my resume</a>
+            <a href="img/cv.pdf" target="_blank" class="button" id="resume">Download my resume</a>
           </div>
 
-          <div class="column">
+          <div class="row">
+            <div class="column col-md-12 col-lg-3" id="skillsandtools">
             <h2>Skills and Tools</h2>
 
           <div class="row">
-            <div class="column">
+            <div class="column col-md-6 col-lg-3" id="skills">
               <h3>Relevant Skills</h3>
               <ul>
                 <li>Problem solving</li>
@@ -75,8 +78,9 @@
                 <li>UI Design</li>
               </ul>
             </div>
+          </div>
 
-            <div class="column">
+            <div class="column col-md-6  col-lg-3" id="tools">
               <h3>Tools I use</h3>
               <ul>
                 <li>Sketch</li>
@@ -96,8 +100,9 @@
                 <li>Microsoft Office</li>
               </ul>
             </div>
-
           </div>
+        </div>
+
         </div>
       </div>
     </div>
@@ -109,7 +114,7 @@
   <footer id="contact">
     <div class="container">
     <h2>Get in Touch</h2>
-    <p>Do you like my work and want to discuss opportunities? Please get in touch.</p>
+    <p>Do you like my work and want to discuss opportunities?<span> Please get in touch.</span></p>
 
     <div>
       <a href="tel:+34622471477" class="button contact">Call me</a>
