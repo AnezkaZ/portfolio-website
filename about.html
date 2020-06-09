@@ -7,6 +7,7 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/7a7e0b07cc.js" crossorigin="anonymous"></script>
   <title>About Anezka Zajicova</title>
   <!--favicon-->
   <link href="img/favicon.png" rel="shortcut icon">
@@ -22,6 +23,7 @@
 
   <header>
     <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
       <a href="index.html">
       <img src="img/logo.svg" alt="Anezka Zajicova" class="logo">
       </a>
@@ -29,17 +31,16 @@
         <ul class="circleBehind">
           <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
         </ul>
       </nav>
+    </div>
     </div>
   </header>
 
   <main>
       <div class="container">
-        <div class="firstheader">
-        <h1>My story</h1>
-      </div>
 
     <div class="section">
       <div class="container">
@@ -49,9 +50,15 @@
         </picture>
 
         <div class="row">
-          <div class="column col-md-12 col-lg-6">
-            <p>A User Experience Designer who includes UI Design in her projects with a background in Graphic and Digital Design and Customer Service. Through problem solving skills, empathy and passion for design she has an ability
-              to understand human needs in various situations and she provides the right and effective solution.</p>
+          <div class="column col-md-12 col-lg-6" id="aboutme">
+            <h2>About me</h2>
+            <p>Hi, I’m Anezka! UX designer based in Barcelona. Since my early age I have discovered my passion for travelling which enables me to explore and learn about various cultures and people’s habits and ways of thinking. I grew up surrounded by artistic environment and drawing has been a huge part of my life since I can remember.</p>
+
+            <p>My background in graphic design and customer service gave me hands on experience not only on how people react and interact with visual materials but also how they act in different situations. My enthusiasm with human beings and the individuality which is in each person, but still sometimes carries certain similarity in behaviour pattern and way of dealing and resolving problems, led me to interest in psychology.</p>
+
+            <p>At this moment I am focusing on UX and UI design, which gives me the perfect opportunity to create meaningful projects that make positive impact on community and the environment. The base core of my projects is to provide people with support and solution. This can be through help with their daily tasks, help to solve a particular situation, education purposes, staying connected with others or related to their future. My problem solving skills, passion and positive approach is my foundation in connecting user’s needs and business mission.</p>
+
+            <p>I welcome diverse project opportunities and challenges. I love coming out of my comfortable zone as it lets me grow not only as a designer but also as a person.</p>
             <a href="img/cv.pdf" target="_blank" class="button" id="resume">Download my resume</a>
           </div>
 
@@ -59,7 +66,7 @@
             <h2>Skills and Tools</h2>
 
           <div class="row">
-            <div class="column col-md-6 col-lg-6" id="skills">
+            <div class="column col-md-6 col-lg-6">
               <h3>Relevant Skills</h3>
               <ul>
                 <li>Problem solving</li>
@@ -166,7 +173,8 @@
     <p>Copyright Anezka Zajicova 2020</p>
   </div>
   </footer>
-
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>
