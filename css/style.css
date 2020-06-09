@@ -150,14 +150,12 @@ line-height: 1.5em;
 }
 
 .logo {
-  max-width: 100px;
-  padding-top: 10px;
+  max-width: 70px;
 }
 
 header {
   background-color: #f4f7fb;
-  text-align: center;
-  padding: 10px;
+  padding: 10px 0 4px;
   box-shadow: 0px 1px 1px 0px rgba(235, 235, 235, 0.8);
   position: fixed;
   width: 100%;
@@ -168,10 +166,7 @@ nav > ul {
   list-style-type: none;
   padding: 0;
   line-height: 1;
-}
-
-nav > ul > li {
-  display: inline-block;
+  margin: 0;
 }
 
 nav > ul > li > a {
@@ -182,8 +177,43 @@ nav > ul > li > a {
   color: #0064E0;
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  font-size: 22px;
+  padding-right: 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 15px 0 0;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px;
+  text-align: center;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
 main {
-  padding-top: 162px;
+  padding-top: 91px;
 }
 
 footer {
@@ -201,9 +231,10 @@ footer {
   margin: 15px;
 }
 
-.firstheader > h1 {
+.firstheader > h3 {
   text-align: center;
-  font-size: 1.75em;
+  font-size: 1.2em;
+  font-weight: 300;
 }
 
 #secondheader > h2 {
@@ -371,12 +402,12 @@ nav a:hover {
   }
 
 #secondheader > h3 {
-    padding-top: 1.8em;
-    padding-bottom: 1.8em;
-    margin-top: 1.8em;
-    margin-bottom: 1.8em;
-    font-size: 1.1em;
-  }
+      padding-top: 1.8em;
+      padding-bottom: 1.8em;
+      margin-top: 1.8em;
+      margin-bottom: 1.8em;
+      font-size: 1.1em;
+    }
 
 #wireframes2 img {
     width: 65%;
@@ -395,13 +426,30 @@ nav a:hover {
       width: 100%;
       margin: auto;
     }
+
+.process li > a {
+      font-weight: 400;
+      color: #575756;
+    }
+
+.process li > a:hover,
+.process li > a:focus {
+      color: #0064E0;
+      opacity: 100%;
+    }
+
+.process li > a:active {
+      color: #575756;
+}
+
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
 
 main {
-  padding-top: 130px;
+  padding-top: 148px;
   }
 
 header {
@@ -412,12 +460,37 @@ header {
 nav {
    width: auto;
    float: right;
-   margin-top: 31px;
+   margin-top: 38px;
+ }
+
+nav > ul {
+  margin: 1em 0;
+}
+
+ nav > ul > li {
+   display: inline-block;
+   border-top: 0px;
  }
 
  nav ul a {
  position: relative;
  }
+
+ .navtoggle.responsive nav {
+   padding: 0;
+ }
+
+ .navtoggle.responsive li  {
+   padding: 0;
+ }
+
+ .navtoggle li:not(:last-child) {
+  display: inline-block;
+}
+
+.navtoggle li:last-child {
+  display: none;
+}
 
  /* Circle behind */
  nav ul.circleBehind a:before, nav ul.circleBehind a:after
@@ -462,6 +535,11 @@ nav {
  [class*="col-"] {
    float: left;
    padding: 25px;
+ }
+
+ .logo {
+   max-width: 100px;
+   padding-top: 10px;
  }
 
  /* For desktop: */
@@ -523,6 +601,10 @@ nav {
 #project-page img {
   padding-bottom: 1.8em;
   }
+
+.process li > a {
+  font-size: 1.1em;
+  }
 }
 
 /* ==============================
@@ -530,7 +612,7 @@ Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
 main {
-    padding-top: 165px;
+    padding-top: 168px;
   }
 
 header {
@@ -604,6 +686,22 @@ nav {
   width: 66.66%;
   margin: auto;
 }
+
+.approach {
+  padding-top: 0;
+}
+
+.process li > a {
+  font-size: 1.2em;
+  }
+
+ #aboutme h2 {
+    text-align: left;
+  }
+
+#skillsandtools h2 {
+    text-align: left;
+  }
 }
 
 /* ==============================

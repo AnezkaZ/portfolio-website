@@ -7,6 +7,7 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/7a7e0b07cc.js" crossorigin="anonymous"></script>
   <title>Vela Weather forecast app</title>
   <!--favicon-->
   <link href="img/favicon.png" rel="shortcut icon">
@@ -22,6 +23,7 @@
 
   <header>
     <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
       <a href="index.html">
       <img src="img/logo.svg" alt="Anezka Zajicova" class="logo">
       </a>
@@ -29,10 +31,12 @@
         <ul class="circleBehind">
           <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
         </ul>
       </nav>
     </div>
+  </div>
   </header>
 
   <main id="project-page">
@@ -65,7 +69,25 @@
       <div class="container">
       <div id="secondheader">
         <h2>My Process</h2>
+        <div class="column col-md-12 col-lg-6" id="process">
+        <ol class="process">
+          <li><a href="#research">Research</a></li>
+          <li><a href="#findings">Findings (Persona)</a></li>
+          <li><a href="#scenarios">Scenarios and user flows</a></li>
+          <li><a href="#wireframes">Wireframes</a></li>
+          <li><a href="#sitemap">Break points</a></li>
+          <li><a href="#progressing">Progressing towards high fidelity wireframes</a></li>
+          <li><a href="#ui">UI elements</a></li>
+          <li><a href="#more">Interactive prototype / Complete presentation</a></li>
+        </ol>
       </div>
+      <div class="column col-md-12 col-lg-6">
+        <picture class="approach">
+          <source srcset="img/vela/vela_approach_mobile.jpg" media="(max-width:639px)">
+          <img src="img/vela/vela_approach_desktop.jpg" alt="Vela approach">
+        </picture>
+        </div>
+        </div>
           <div id="problem_statement">
         <picture>
           <source srcset="img/vela/vela_problemstatement_mobile.jpg" media="(max-width:639px)">
@@ -75,9 +97,9 @@
       </div>
     </div>
 
-    <div class="section">
+    <div class="section" id="research">
       <div class="container" id="secondheader">
-        <h3>RESEARCH</h3>
+        <h3>1. RESEARCH</h3>
         <p>Based on competitive analysis and surveys and interviews I have found what is already available on the market as well as what the users specific needs are.</p>
           <div id="research">
         <picture>
@@ -96,9 +118,9 @@
       </div>
     </div>
 
-    <div class="section">
+    <div class="section" id="findings">
       <div class="container" id="secondheader">
-        <h3>FINDINGS</h3>
+        <h3>2. FINDINGS</h3>
         <p>All the gathered information from the research was used to create a primary persona.</p>
           <div id="persona1">
         <picture>
@@ -109,9 +131,9 @@
       </div>
     </div>
 
-    <div class="section">
+    <div class="section" id="scenarios">
       <div class="container" id="secondheader">
-        <h3>SCENARIOS AND USER FLOWS</h3>
+        <h3>3. SCENARIOS AND USER FLOWS</h3>
         <p>Sem is currently in a harbour with his boat. He is about to teach new sailors how to sail. He is planning which day
           in the upcoming week would be best to have this lesson. This mostly depends on the conditions of the weather.
           It is important for the beginner sailors to have a calm weather.</p>
@@ -128,9 +150,9 @@
       </div>
     </div>
 
-    <div class="section">
+    <div class="section" id="wireframes">
       <div class="container" id="secondheader">
-        <h3>WIREFRAMES</h3>
+        <h3>4. WIREFRAMES</h3>
           <div id="wireframes1">
         <picture>
           <source srcset="img/vela/vela_wireframes_mobile.jpg" media="(max-width:639px)">
@@ -155,9 +177,9 @@
       </div>
     </div>
 
-    <div class="section">
+    <div class="section" id="sitemap">
       <div class="container" id="secondheader">
-        <h3>SITEMAP</h3>
+        <h3>5. SITEMAP</h3>
         <picture>
           <source srcset="img/vela/vela_sitemap.jpg">
           <img src="img/vela/vela_sitemap.jpg" alt="Perfect Properties Home Screen">
@@ -165,9 +187,9 @@
       </div>
     </div>
 
-    <div class="section">
+    <div class="section" id="progressing">
       <div class="container" id="secondheader">
-        <h3>PROGRESSING TOWARDS HIGH FIDELITY WIREFRAMES</h3>
+        <h3>6. PROGRESSING TOWARDS HIGH FIDELITY WIREFRAMES</h3>
         <p>Usability testing provided information for further development of the app. Issues which were found during the testing have been fixed to achieve effective outcome of the app.</p>
         <picture>
           <source srcset="img/vela/vela_issue1_mobile.jpg" media="(max-width:639px)">
@@ -188,9 +210,9 @@
       </div>
     </div>
 
-    <div class="section">
+    <div class="section" id="ui">
       <div class="container" id="secondheader">
-        <h3>UI ELEMENTS</h3>
+        <h3>7. UI ELEMENTS</h3>
         <picture>
           <source srcset="img/vela/vela_ui_element_mobile.jpg" media="(max-width:639px)">
           <img src="img/vela/vela_ui_element_desktop.jpg" alt="Vela UI elements">
@@ -202,9 +224,9 @@
       </div>
     </div>
 
-    <div class="section">
+    <div class="section" id="more">
       <div class="container" id="secondheader">
-    <h3>Would you like to see more?</h3>
+    <h3>8. Would you like to see more?</h3>
     <div class="project_end">
       <a href="img/vela/Vela.pdf" target="_blank" class="button">View full presentation</a>
     </div>
@@ -275,7 +297,8 @@
     <p>Copyright Anezka Zajicova 2020</p>
   </div>
   </footer>
-
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>

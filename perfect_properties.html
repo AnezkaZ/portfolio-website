@@ -7,6 +7,7 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/7a7e0b07cc.js" crossorigin="anonymous"></script>
   <title>Perfect Properties real estate app</title>
   <!--favicon-->
   <link href="img/favicon.png" rel="shortcut icon">
@@ -22,6 +23,7 @@
 
   <header>
     <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
       <a href="index.html">
       <img src="img/logo.svg" alt="Anezka Zajicova" class="logo">
       </a>
@@ -29,10 +31,12 @@
         <ul class="circleBehind">
           <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#contact" onclick="menuToggle()">Contact</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
         </ul>
       </nav>
     </div>
+  </div>
   </header>
 
   <main id="project-page">
@@ -64,24 +68,57 @@
   </div>
   </div>
 
-    <div class="section">
-      <div class="container">
-      <div id="secondheader">
-        <h2>My Process</h2>
-      </div>
-        <p>Based on the research Rashida is the primary persona for the base of this application.</p>
-          <div id="persona1">
-        <picture>
-          <source srcset="img/perfect_properties/PP_persona_mobile.jpg" media="(max-width:639px)">
-          <img src="img/perfect_properties/PP_persona_desktop.jpg" alt="Perfect Properties Persona">
-        </picture>
-      </div>
-      </div>
+  <div class="section">
+    <div class="container">
+    <div id="secondheader">
+      <h2>My Process</h2>
+      <div class="column col-md-12 col-lg-6" id="process">
+      <ol class="process">
+        <li><a href="#findings">Findings (Persona)</a></li>
+        <li><a href="#scenarios">Scenarios and user flows</a></li>
+        <li><a href="#wireframes">Wireframes</a></li>
+        <li><a href="#reakpoints">Break points</a></li>
+        <li><a href="#ui">UI elements</a></li>
+        <li><a href="#video">Video walkthrough</a></li>
+        <li><a href="#more">Interactive prototype / Complete presentation</a></li>
+      </ol>
     </div>
 
-    <div class="section">
+    <div class="column col-md-12 col-lg-6">
+      <picture class="approach">
+        <source srcset="img/perfect_properties/pp_approach_mobile.jpg" media="(max-width:639px)">
+        <img src="img/perfect_properties/pp_approach_desktop.jpg" alt="Perfect Profile approach">
+      </picture>
+      </div>
+
+      <div id="problem_statement">
+      <picture>
+      <source srcset="img/perfect_properties/pp_statement_mobile.jpg" media="(max-width:639px)">
+      <img src="img/perfect_properties/pp_statement_desktop.jpg" alt="Perfect Properties problem statement and solution">
+      </picture>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="section" id="findings">
+    <div class="container">
+      <div id="secondheader">
+      <h3>1. FINDINGS</h3>
+      <p>Based on the research Rashida is the primary persona for the base of this application.</p>
+        <div id="persona1">
+      <picture>
+        <source srcset="img/perfect_properties/PP_persona_mobile.jpg" media="(max-width:639px)">
+        <img src="img/perfect_properties/PP_persona_desktop.jpg" alt="Perfect Properties Persona">
+      </picture>
+    </div>
+    </div>
+    </div>
+  </div>
+
+    <div class="section" id="scenarios">
       <div class="container" id="secondheader">
-        <h3>USER FLOWS</h3>
+        <h3>2. SCENARIOS AND USER FLOWS</h3>
           <div id="userflows1">
         <picture>
           <source srcset="img/perfect_properties/PP_user_flows_mobile.jpg" media="(max-width:639px)">
@@ -95,41 +132,29 @@
       </div>
     </div>
 
-    <div class="section">
+    <div class="section" id="wireframes">
       <div class="container" id="secondheader">
-        <h3>WIREFRAMES</h3>
+        <h3>3. WIREFRAMES</h3>
           <div class="column">
         <picture>
           <source srcset="img/perfect_properties/pp_wireframes_mobile.jpg" media="(max-width:767px)">
           <img src="img/perfect_properties/PP_wireframes_desktop.jpg" alt="Perfect Properties Wireframes">
         </picture>
         </div>
-      </div>
-    </div>
-
-    <div class="section">
-      <div class="container" id="secondheader">
-        <h3>HOME SCREEN</h3>
         <picture>
-          <source srcset="img/perfect_properties/PP_home_screen_mobile.jpg" media="(max-width:639px)">
-          <img src="img/perfect_properties/PP_home_screen_desktop.jpg" alt="Perfect Properties Home Screen">
-        </picture>
-      </div>
+        <source srcset="img/perfect_properties/PP_home_screen_mobile.jpg" media="(max-width:639px)">
+        <img src="img/perfect_properties/PP_home_screen_desktop.jpg" alt="Perfect Properties Home Screen">
+      </picture>
+      <picture>
+        <source srcset="img/perfect_properties/PP_search_mobile.jpg" media="(max-width:639px)">
+        <img src="img/perfect_properties/PP_search_desktop.jpg" alt="Perfect Properties Search">
+      </picture>
+    </div>
     </div>
 
-    <div class="section">
+    <div class="section" id="breakpoints">
       <div class="container" id="secondheader">
-        <h3>EASY WAY TO FIND PROPERTY MEETING SPECIFIC CRITERIA</h3>
-        <picture>
-          <source srcset="img/perfect_properties/PP_search_mobile.jpg" media="(max-width:639px)">
-          <img src="img/perfect_properties/PP_search_desktop.jpg" alt="Perfect Properties Search">
-        </picture>
-      </div>
-    </div>
-
-    <div class="section">
-      <div class="container" id="secondheader">
-        <h3>LISTING VIEWS ADJUSTED TO WIDE RANGE OF DEVICES</h3>
+        <h3>4. BREAK POINTS</h3>
         <picture>
           <source srcset="img/perfect_properties/PP_devices1_mobile.jpg" media="(max-width:639px)">
           <img src="img/perfect_properties/PP_devices1_desktop.jpg" alt="Perfect Properties Devices 1">
@@ -153,29 +178,32 @@
       </div>
     </div>
 
-    <div class="section">
+    <div class="section" id="ui">
       <div class="container" id="secondheader">
-        <h3>MOOD BOARD</h3>
-        <p>This moodboard was chosen to represent cosy and home friendly atmosphere.</p>
-        <picture>
-          <source srcset="img/perfect_properties/PP_moodboard_mobile.jpg" media="(max-width:767px)">
-          <img src="img/perfect_properties/PP_moodboard_desktop.jpg" alt="Perfect Properties Moodboard">
-        </picture>
-      </div>
-    </div>
-
-    <div class="section">
-      <div class="container" id="secondheader">
-        <h3>UI ELEMENTS​</h3>
+        <h3>5. UI ELEMENTS​</h3>
         <picture>
           <source srcset="img/perfect_properties/pp_uielements_mobile.jpg" media="(max-width:639px)">
           <img src="img/perfect_properties/pp_uielements_desktop.jpg" alt="Perfect Properties Style Guide">
         </picture>
-        <h3>VIDEO WALKTHROUGH</h3>
+        <picture>
+          <source srcset="img/perfect_properties/PP_tone_of_voice_mobile.jpg" media="(max-width:639px)">
+          <img src="img/perfect_properties/PP_tone_of_voice_desktop.jpg" alt="Perfect Properties Tone of voice">
+        </picture>
+      </div>
+    </div>
+
+    <div class="section" id="video">
+      <div class="container" id="secondheader">
+        <h3>6. VIDEO WALKTHROUGH</h3>
         <video controls>
           <source src="img/pp_video.mp4" type="video/mp4">
         </video>
-        <h3>Would you like to see more?</h3>
+      </div>
+    </div>
+
+    <div class="section" id="more">
+      <div class="container" id="secondheader">
+        <h3>7. Would you like to see more?</h3>
         <div class="project_end">
           <a href="img/perfect_properties/Perfect_Properties.pdf" target="_blank" class="button">View full presentation</a>
         </div>
@@ -186,7 +214,6 @@
           </ul>
         </div>
       </div>
-    </div>
     </div>
   </main>
 
@@ -248,7 +275,8 @@
     <p>Copyright Anezka Zajicova 2020</p>
   </div>
   </footer>
-
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
 </body>
 
 </html>
