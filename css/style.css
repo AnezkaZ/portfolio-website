@@ -8,6 +8,10 @@ Other colors: 1. Light gray: #C5C5C5; 2. Dark gray : #575756; 3. White : #FFFFFF
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #ffffff;
   font-family: 'Roboto', sans-serif;
@@ -193,19 +197,14 @@ nav > ul > li > a {
   padding-right: 0;
 }
 
-.navtoggle.responsive li  {
-  display: block;
-}
-
 .navtoggle.responsive nav {
-  padding: 15px 0 0;
+  padding: 24px 0 0;
+  text-align: center;
 }
-
 .navtoggle.responsive li  {
   display: block;
-  padding: 10px 0;
-  border-top: 1px;
-  text-align: center;
+  padding: 15px 0;
+  border-top: 2px solid #ffffff;
 }
 
 .navtoggle.responsive li:last-child  {
@@ -253,7 +252,7 @@ footer {
   font-size: 1.40em;
   background: #f4f7fb;
   padding-top: 1em;
-  padding-bottom: 1em;
+  margin-bottom: 1em;
   text-transform: uppercase;
 }
 
@@ -394,19 +393,19 @@ nav a:hover {
     }
 
 #secondheader > h2 {
-    padding-top: 1.8em;
-    padding-bottom: 1.8em;
-    margin-top: 1.8em;
-    margin-bottom: 1.8em;
-    font-size: 1.4em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+    font-size: 1.2em;
   }
 
 #secondheader > h3 {
-      padding-top: 1.8em;
-      padding-bottom: 1.8em;
-      margin-top: 1.8em;
-      margin-bottom: 1.8em;
-      font-size: 1.1em;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      margin-top: 1.5em;
+      margin-bottom: 1.5em;
+      font-size: 1.2em;
     }
 
 #wireframes2 img {
@@ -427,21 +426,47 @@ nav a:hover {
       margin: auto;
     }
 
-.process li > a {
-      font-weight: 400;
-      color: #575756;
+    .steps {
+      text-transform: uppercase;
     }
 
-.process li > a:hover,
-.process li > a:focus {
+    #steps > ul  {
+      list-style-type: none;
+      padding: 0;
+      line-height: 1.8;
+      margin: 0;
+      font-size: 0.8em;
+    }
+
+.steps li > a {
+      font-weight: 500;
       color: #0064E0;
+
+    }
+
+.steps li > a:hover,
+.steps li > a:focus {
+      color: #575756;
       opacity: 100%;
     }
 
-.process li > a:active {
+.steps li > a:active {
       color: #575756;
 }
 
+#tools ul {
+    margin-top: 0;
+  }
+
+  #goback {
+    float: right;
+    font-size: 0.8em;
+  }
+
+.tools {
+  width: 10%;
+  display: inline-block;
+}
 
 /* ==============================
 Medium devices (640px and larger)
@@ -449,18 +474,23 @@ Medium devices (640px and larger)
 @media only screen and (min-width: 640px) {
 
 main {
-  padding-top: 148px;
+  padding-top: 124px;
   }
 
 header {
    text-align: unset;
-   padding: 15px 0;
+   padding: 18px 0;
+ }
+
+ .logo {
+   max-width: 70px;
+   padding-top: 10px;
  }
 
 nav {
    width: auto;
    float: right;
-   margin-top: 38px;
+   margin-top: 20px;
  }
 
 nav > ul {
@@ -482,6 +512,7 @@ nav > ul {
 
  .navtoggle.responsive li  {
    padding: 0;
+   border-top: 0px;
  }
 
  .navtoggle li:not(:last-child) {
@@ -537,11 +568,6 @@ nav > ul {
    padding: 25px;
  }
 
- .logo {
-   max-width: 100px;
-   padding-top: 10px;
- }
-
  /* For desktop: */
 .col-md-1 {width: 8.33%;}
 .col-md-2 {width: 16.66%;}
@@ -573,18 +599,18 @@ nav > ul {
 }
 
 #secondheader > h2 {
-  padding-top: 1.9em;
-  padding-bottom: 1.9em;
-  margin-top: 1.9em;
-  margin-bottom: 1.9em;
-  font-size: 1.6em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+  font-size: 1.2em;
 }
 
 #secondheader > h3 {
-  padding-top: 1.9em;
-  padding-bottom: 1.9em;
-  margin-top: 1.9em;
-  margin-bottom: 1.9em;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-top: 1.5em;
+  margin-bottom: 0em;
   font-size: 1.2em;
 }
 
@@ -602,9 +628,14 @@ nav > ul {
   padding-bottom: 1.8em;
   }
 
-.process li > a {
-  font-size: 1.1em;
+.steps li > a {
+  font-size: 1.2em;
   }
+
+  #chart {
+    width: 60%;
+  }
+
 }
 
 /* ==============================
@@ -612,18 +643,18 @@ Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
 main {
-    padding-top: 168px;
+    padding-top: 124px;
   }
 
 header {
  text-align: unset;
- padding: 25px 0;
+ padding: 18px 0;
 }
 
 nav {
    width: auto;
    float: right;
-   margin-top: 38px;
+   margin-top: 20px;
  }
 
 .column_left > h2 {
@@ -654,21 +685,20 @@ nav {
 }
 
 #secondheader > h2 {
-  padding-top: 2em;
-  padding-bottom: 2em;
-  margin-top: 2em;
-  margin-bottom: 2em;
-  font-size: 1.8em;
-}
-
-#secondheader > h3 {
-  padding-top: 2em;
-  padding-bottom: 2em;
+  padding-top: 1em;
+  padding-bottom: 1em;
   margin-top: 2em;
   margin-bottom: 2em;
   font-size: 1.5em;
 }
 
+#secondheader > h3 {
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-top: 2em;
+  margin-bottom: 0em;
+  font-size: 1.5em;
+}
 
 #project-overview .col-lg-7 {
  float: right;
@@ -687,11 +717,7 @@ nav {
   margin: auto;
 }
 
-.approach {
-  padding-top: 0;
-}
-
-.process li > a {
+.steps li > a {
   font-size: 1.2em;
   }
 
@@ -701,6 +727,11 @@ nav {
 
 #skillsandtools h2 {
     text-align: left;
+  }
+
+#chart {
+    width: 80%;
+    margin-top: 20px;
   }
 }
 
