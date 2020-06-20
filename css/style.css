@@ -114,7 +114,7 @@ a:active {
 
 .row {
   margin: 25px 0;
-}
+  }
 
 #work .row {
   padding-bottom: 25px;
@@ -268,7 +268,8 @@ footer {
 
 #project_links > ul > li > a {
   font-weight: 400;
-  color: #575756;
+  color: #0064E0;
+  text-decoration: underline;
 }
 
 #project_links > ul > li > a:hover{
@@ -441,7 +442,7 @@ nav a:hover {
 .steps li > a {
       font-weight: 500;
       color: #0064E0;
-
+      text-decoration: underline;
     }
 
 .steps li > a:hover,
@@ -458,14 +459,25 @@ nav a:hover {
     margin-top: 0;
   }
 
-  #goback {
-    float: right;
+  .goback {
     font-size: 0.8em;
+    text-decoration: underline;
+    text-align: right;
+    padding: 20px 0;
   }
 
-.tools {
-  width: 10%;
-  display: inline-block;
+.tools img {
+  width: 50px;
+  float: left;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.p_800  {
+   max-width: 800px;
+   margin: 30px auto;
+   line-height: 31px;
+   text-align: center;
 }
 
 /* ==============================
@@ -633,7 +645,7 @@ nav > ul {
   }
 
   #chart {
-    width: 60%;
+    width: 100%;
   }
 
 }
