@@ -122,6 +122,7 @@ a:active {
 #work .row {
   padding-bottom: 25px;
   border-bottom: 1px solid #ebebeb;
+  text-align: left;
 }
 
 #hero {
@@ -157,7 +158,7 @@ h1 span {
 }
 
 .logo {
-  max-width: 70px;
+  max-width: 60px;
 }
 
 header {
@@ -296,7 +297,10 @@ video {
 
 .PP_animation {
   width: 60%;
-  margin: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
 }
 
 .row::after {
@@ -399,10 +403,15 @@ nav a:hover {
   margin-bottom: 10px;
 }
 
+#steps {
+  text-align: center;
+}
+
 .steps li > a {
   font-weight: 500;
   color: #0064e0;
   text-decoration: underline;
+  font-size: 16px;
 }
 
 .steps li > a:hover,
@@ -437,13 +446,19 @@ nav a:hover {
   max-width: 800px;
   margin: 30px auto;
   line-height: 31px;
-  text-align: center;
+  text-align: left;
 }
 
 #chart {
-  width: 80%;
+  width: 0%;
   margin-top: 20px;
-  margin-left: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#steps h3 {
+  font-size: 0;
 }
 
 /* ==============================
@@ -567,14 +582,6 @@ Medium devices (640px and larger)
     margin-block-start: 0;
   }
 
-  .PP_animation {
-    width: 60%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-  }
-
   #skillsandtools {
     text-align: left;
   }
@@ -616,6 +623,35 @@ Medium devices (640px and larger)
   #chart {
     width: 100%;
     margin-left: 0;
+  }
+
+  .PP_animation {
+    width: 40%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+
+  #project-overview {
+    text-align: left;
+  }
+
+  .tools img {
+    float: left;
+  }
+
+  .p_800 {
+    text-align: center;
+  }
+
+  #steps {
+    text-align: left;
+  }
+
+  #steps h3 {
+    font-size: 1.3em;
+    font-weight: 600;
   }
 }
 
@@ -709,6 +745,10 @@ Large devices (1024px or larger)
   #chart {
     width: 90%;
   }
+
+  .PP_animation {
+    width: 70%;
+  }
 }
 
 /* ==============================
@@ -730,6 +770,6 @@ X-large devices (1440px or larger)
   }
 
   .PP_animation {
-    width: 60%;
+    width: 70%;
   }
 }
