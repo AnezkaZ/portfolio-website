@@ -459,6 +459,10 @@ nav a:hover {
   font-size: 0;
 }
 
+.copyright {
+  font-size: 0.8em;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
